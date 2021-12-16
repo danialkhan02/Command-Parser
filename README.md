@@ -28,29 +28,50 @@ Reserved keyword list that can only be used by arguments:
 An example run of the program is found below:
 
 > maxShapes 6
+
 New database: max shapes is 6
 > create hello_circle circle 1 2 3 3
+
+
 Created hello_circle: circle 1 2 3 3
 > create hello
+
+
 Error: too few arguments
 > create triangle
+
+
 Error: invalid shape name
 > create triangle hello_triangle 2 3 4 5
+
+
 Error: invalid shape name
 > create hello_triangle 2 3 4 5
+
+
 Error: invalid argument
 Error: invalid shape type
 > create hello_triangle triangle 2 3 4 5
+
+
 Created hello_triangle: triangle 2 3 4 5
 > draw
+
+
 Error: too few arguments
 > draw all
+
+
 Drew all shapes
 hello_circle: circle 1 2 3 3
 hello_triangle: triangle 2 3 4 5
 > delete hello_circle
+
+
 Deleted shape hello_circle
 > draw all
+
+
 Drew all shapes
 hello_triangle: triangle 2 3 4 5
 > 
